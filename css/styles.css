@@ -1,0 +1,91 @@
+/***************** GENERAL ******************/
+body {
+	position: relative;
+}
+
+h1 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 4em;
+	text-align: left;
+}
+h2, p {
+	font-family: "Muli", sans-serif;
+	text-align: left;
+}
+
+/***************** NAVIGATION ******************/
+
+.scrollspy-example {
+    position: relative;
+    height: 200px;
+    margin-top: .5rem;
+    overflow: auto;
+}
+.navbar-toggler {
+	border: none;
+}
+.navbar {
+	font-family: "Muli", sans-serif;
+}
+.bg-faded {
+	background-color: #fff;
+}
+.rounded {
+	border-radius: 1.5em;
+}
+
+/***************** CARD DECK ******************/
+
+.overflow {
+	overflow: hidden;
+}
+.polaroid {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container:hover .overlay {
+  opacity: 5;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .4s ease;
+  background-color: #CBC5C1;
+}
+.text {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+**************** FOOTER ******************/
+
+#footer-social {
+	font-family: "Muli", sans-serif;
+}
+#footer-social a {
+	color: #f59070;
+}
+
+/***************** MEDIA QUERIES ******************/
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
