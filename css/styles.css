@@ -70,7 +70,7 @@ h2, p {
   -ms-transform: translate(-50%, -50%);
 }
 
-**************** FOOTER ******************/
+/**************** FOOTER ******************/
 
 #footer-social {
 	font-family: "Muli", sans-serif;
@@ -87,5 +87,18 @@ h2, p {
   }
   @include media-breakpoint-only(xl) {
     column-count: 5;
+  }
+}
+
+@media (max-width: 575px) {
+  .overlay {
+    display: none;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) {
+  .overlay {
+    display: none;
   }
 }
